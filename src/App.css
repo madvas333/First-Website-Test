@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+.App-header {
+  text-align: center;
+}
+
+.fabulous-text {
+  font-family: 'Baloo 2', cursive; /* Bubble-style font */
+  font-size: 48px; /* Large font size */
+  color: pink; /* Pink color */
+  text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5), /* Light pink glow */
+               0 0 15px rgba(255, 182, 193, 0.7), /* Extra sparkle */
+               0 0 20px rgba(255, 20, 147, 0.6); /* Deep pink glow */
+  animation: sparkle 1.5s infinite alternate; /* Sparkling effect */
+}
+
+@keyframes sparkle {
+  0% {
+    text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5),
+                 0 0 15px rgba(255, 182, 193, 0.7),
+                 0 0 20px rgba(255, 20, 147, 0.6);
+  }
+  100% {
+    text-shadow: 4px 4px 10px rgba(255, 182, 193, 0.8),
+                 0 0 20px rgba(255, 105, 180, 0.9),
+                 0 0 25px rgba(255, 20, 147, 0.8);
+  }
+}

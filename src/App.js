@@ -11,14 +11,14 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Madison Extravaganza</p>
+          <p className="fabulous-text">Madison Extravaganza!</p>
           <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about">About me </Link>
               </li>
             </ul>
           </nav>
