@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,15 +10,24 @@ body {
   overflow-x: hidden; 
 }
 
+.HomePage {
+  background-color: rgb(247, 144, 161); 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-header, .HomePage, .App {
-  background: linear-gradient(205deg, #ee7bb5, #608be9);
+.App-header {
+  background: linear-gradient(205deg, #bd6e95, #608be9);
   background-size: 200% 200%;
   animation: gradient-animation 5s ease infinite;
-  min-height: 100vh;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,54 +37,58 @@ body {
   overflow: hidden;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 .header-text {
   font-family: 'Lobster', cursive;
-  font-size: 48px;
-  color: #ff69b4; /* Pink color */
+  font-size: 80px;
+  color: #e053f3; 
   text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5),
                0 0 15px rgba(255, 182, 193, 0.7),
                0 0 20px rgba(255, 20, 147, 0.6);
+  margin: 0; /* Remove margin for closer spacing */
 }
 
-.shooting-stars {
-  position: absolute;
-  top: 4;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 10;
-  overflow: hidden;
+.subtext {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: hsl(108, 67%, 80%);
+  margin-top: 10px; /* Adjust margin for spacing */
+  margin-bottom: 20px; /* Space between subtext and nav */
 }
 
-.star {
-  position: absolute;
-  width: 5px;
-  height: 300px;
-  background: linear-gradient(45deg, rgba(208, 218, 7, 0.7), rgba(255, 255, 255, 0));
-  opacity: 50;
-  animation: shooting-star 5s linear infinite;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: display-box;
+  gap: 1px; /* Space between links */
 }
 
-@keyframes shooting-star {
-  0% {
-    opacity: 1;
-    transform: translateY(-100%) translateX(0) rotate(45deg);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(100vh) translateX(100vw) rotate(45deg);
-  }
+nav ul li {
+  display: display-box;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: #61dafb;
+  font-family: "lobster";
+  font-size: 24px; 
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  width: 700px; 
+  height: 800px;
+  object-fit: cover;
+  border-radius: 50%; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+

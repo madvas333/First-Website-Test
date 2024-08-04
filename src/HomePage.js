@@ -9,7 +9,7 @@ import './App.css';
 function HomePage() {
   return (
     <div className="HomePage">
-      <h1 className="header-text">Madison Extravaganza</h1>
+      <h1 className="header-text">My Art</h1>
       <div className="shooting-stars">
         {[...Array(10)].map((_, i) => (
           <div
@@ -25,7 +25,7 @@ function HomePage() {
       </div>
 
       <main>
-        <h2>My Art</h2>
+      <h2 className="subtext">Drawn with 14k gold #3776 Century Fountain Pen</h2>
         <div className="image-gallery">
           <img src={image1} alt="Draw 1" className="gallery-image" />
           <img src={image5} alt="Draw 5" className="gallery-image" />

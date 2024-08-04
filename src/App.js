@@ -9,19 +9,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="header-text">Madison Extravaganza</h1>
-        <p className="subtext">Just in case Instagram somehow disappears</p>
+        <h1 className="header-text">Madison Extravaganza</h1> 
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">My Art</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About Me</Link>
             </li>
           </ul>
         </nav>
+        <img src={logo} className="App-logo" alt="logo" />
       </header>
 
       <main>
