@@ -20,8 +20,8 @@ body {
 }
 
 .App-header {
-  border: 10px solid #abf9aa; /* Add a solid border with a specific color */
-  border-radius: 150px; /* Optional: round the corners for a softer look */
+  border: 30px solid #abf9aa; /* Add a solid border with a specific color */
+  border-radius: 50px; /* Optional: round the corners for a softer look */
   padding: 3px; /* Add some padding for spacing inside the header */
   margin-bottom: 5px; /* Add some margin below the header for spacing */
   box-shadow: 0 8px 20px rgba(213, 225, 153, 0.2); /* Optional: add a shadow for extra flair */
@@ -97,7 +97,7 @@ body {
   text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5),
                0 0 15px rgba(255, 182, 193, 0.7),
                0 0 20px rgba(255, 20, 147, 0.6);
-  margin: 0; /* Remove margin for closer spacing */
+  margin: 0;
 }
 
 .subtext {
@@ -137,7 +137,7 @@ nav ul li a {
 
 .gallery-image {
   width: 700px; 
-  height: 800px;
+  height: 700px;
   object-fit: cover;
   border-radius: 50%; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
