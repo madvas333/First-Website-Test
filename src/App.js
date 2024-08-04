@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
+import ReviewPage from './components/ReviewPage';
 import './App.css';
 import logo from './logo.jpeg';
 
@@ -18,6 +19,9 @@ function App() {
             <li>
               <Link to="/about">About Me</Link>
             </li>
+            <li>
+              <Link to="/reviews">Reviews</Link> {/* Consistent path */}
+            </li>
           </ul>
         </nav>
         <img src={logo} className="App-logo" alt="logo" />
@@ -27,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/reviews" element={<ReviewPage />} />
         </Routes>
       </main>
     </div>
