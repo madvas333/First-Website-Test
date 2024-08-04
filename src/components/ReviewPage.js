@@ -4,7 +4,7 @@ import fakeReviews from '../data/fakeReviews';
 
 const ReviewPage = () => {
   return (
-    <div className="review-page">
+    <div className="HomePage">
         <header className="App-header"></header>
         <h1 className="header-text">Reviews</h1>
       {fakeReviews.map((review) => (
