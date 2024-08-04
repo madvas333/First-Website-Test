@@ -1,66 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-header, .HomePage, .App {
+  background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  position: relative; /* Necessary for shooting stars */
+  overflow: hidden; /* Hide overflow to ensure stars don't show scrollbars */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
-
-.App-header {
-  text-align: center;
-}
-
-.fabulous-text {
-  font-family: 'Baloo 2', cursive; /* Bubble-style font */
-  font-size: 48px; /* Large font size */
-  color: pink; /* Pink color */
-  text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5), /* Light pink glow */
-               0 0 15px rgba(255, 182, 193, 0.7), /* Extra sparkle */
-               0 0 20px rgba(255, 20, 147, 0.6); /* Deep pink glow */
-  animation: sparkle 1.5s infinite alternate; /* Sparkling effect */
-}
-
-@keyframes sparkle {
+@keyframes gradient-animation {
   0% {
-    text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5),
-                 0 0 15px rgba(255, 182, 193, 0.7),
-                 0 0 20px rgba(255, 20, 147, 0.6);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    text-shadow: 4px 4px 10px rgba(255, 182, 193, 0.8),
-                 0 0 20px rgba(255, 105, 180, 0.9),
-                 0 0 25px rgba(255, 20, 147, 0.8);
+    background-position: 0% 50%;
+  }
+}
+
+
+.shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: shooting-star 2s linear infinite;
+}
+
+@keyframes shooting-star {
+  0% {
+    opacity: 1;
+    transform: translateY(-100%) translateX(0) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) translateX(100vw) rotate(45deg);
   }
 }
