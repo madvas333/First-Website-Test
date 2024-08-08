@@ -11,19 +11,7 @@ function HomePage() {
   return (
     <div className="HomePage">
       <h1 className="header-text">My Art</h1>
-      <div className="shooting-stars">
-        {[...Array(10)].map((_, i) => (
-          <div
-            key={i}
-            className="star"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`
-            }}
-          />
-        ))}
-      </div>
+          <div/>
 
       <main>
       <h2 className="subtext">Drawn with 14k gold #3776 Century Fountain Pen</h2>

@@ -19,6 +19,8 @@ body {
   justify-content: center;
 }
 
+
+
 .App-header {
   border: 30px solid #abf9aa; /* Add a solid border with a specific color */
   border-radius: 50px; /* Optional: round the corners for a softer look */
@@ -74,6 +76,27 @@ body {
 .review-card p {
   color: #4a148c;
 }
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b95da1; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.about-me {
+  padding: 20px;
+  background-color: #c05697; /* Background color for the about-me section */
+  min-height: 100vh; /* Ensure the page covers the full height */
+}
+
+h1, p {
+  margin: 0;
+  padding: 10px 0;
+}
+
 
 .App-header {
   background: linear-gradient(205deg, #bd6e95, #608be9);

@@ -12,7 +12,6 @@ function App() {
       <header className="App-header">
         <h1 className="header-text">Madison Extravaganza</h1> 
         <nav>
-      
           <ul>
             <li>
               <Link to="/">My Art</Link>
