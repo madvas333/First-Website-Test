@@ -22,7 +22,7 @@ body {
 
 
 .App-header {
-  border: 30px solid #abf9aa; /* Add a solid border with a specific color */
+  border: 20px solid #abf9aa; /* Add a solid border with a specific color */
   border-radius: 50px; /* Optional: round the corners for a softer look */
   padding: 3px; /* Add some padding for spacing inside the header */
   margin-bottom: 5px; /* Add some margin below the header for spacing */
@@ -64,18 +64,39 @@ body {
 .review-card {
   margin: 10px 0;
   padding: 10px;
-  background-color: #fff;
+  background-color: #af91f7;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .review-card h3 {
-  color: #d81b60;
+  color: #e7417e;
 }
 
 .review-card p {
   color: #4a148c;
 }
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b95da1; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.about-me {
+  padding: 20px;
+  background-color: #c05697; /* Background color for the about-me section */
+  min-height: 100vh; /* Ensure the page covers the full height */
+}
+
+h1, p {
+  margin: 0;
+  padding: 10px 0;
+}
+
 
 .App-header {
   background: linear-gradient(205deg, #bd6e95, #608be9);
