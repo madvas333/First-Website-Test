@@ -1,15 +1,16 @@
+
 const fakeReviews = [
     
     
     {
       id: 1,
-      username: "John",
+      username: "John Dog",
       rating: 10,
       comment: "The best one i've ever gotten ✨🌈",
     },
     {
       id: 2,
-      username: "Fitz",
+      username: "Fitz the CAT",
       rating: 15,
       comment: "MADISON is an industry leader! 💖",
     },

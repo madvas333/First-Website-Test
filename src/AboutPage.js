@@ -1,5 +1,4 @@
 import React from 'react';
-import Snowflakes from './Snowflakes';
 
 function AboutMe() {
   return (
