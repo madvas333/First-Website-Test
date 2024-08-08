@@ -1,13 +1,18 @@
+// AboutMe.js
 import React from 'react';
-import './App.css';
+import Snowflakes from './Snowflakes';
 
-function AboutPage() {
+const AboutMe = () => {
   return (
-    <div className="HomePage">
-      <h1 className="header-text">About Madison</h1>
-      <p className="subtext">This is the about page where you can learn more about Madison.</p>
+    <div className="about-me">
+      <h1>About Me</h1>
+      <p>Welcome to my fabulous About Me page!</p>
+      {/* Add other content here */}
+      
+      {/* Include the Snowflakes component */}
+      <Snowflakes />
     </div>
   );
-}
+};
 
-export default AboutPage;
+export default AboutMe;
