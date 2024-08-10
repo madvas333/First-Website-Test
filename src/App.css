@@ -9,6 +9,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; 
 }
+.animation-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-element {
+  position: fixed; /* or absolute */
+  z-index: 1000; /* Ensure it appears on top */
+  top: 0; /* Start at the top */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+
+.HomePage .animated-heart {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .HomePage {
   background-color: rgb(247, 144, 161); 
@@ -109,7 +131,7 @@ h1, p {
   justify-content: center;
   color: rgb(23, 196, 187);
   position: relative; 
-  overflow: hidden;
+  
 }
 
 
@@ -135,12 +157,12 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: display-box;
+  display: display-flex;
   gap: 1px; /* Space between links */
 }
 
 nav ul li {
-  display: display-box;
+  display: display-flex;
 }
 
 nav ul li a {

@@ -5,16 +5,6 @@ import AboutPage from './AboutPage';
 import ReviewPage from './components/ReviewPage';
 import './App.css';
 import logo from './logo.jpeg';
-import SimpleFade from './components/SimpleFade'; // Adjust path if needed
-
-{(
-    <div>
-      <SimpleFade />
-      <h1>Content Below</h1>
-    </div>
-  );
-};
-
 
 function App() {
   return (

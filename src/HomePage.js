@@ -6,7 +6,7 @@ import image4 from './images/draw4.jpeg';
 import image5 from './images/draw5.jpeg';
 import image6 from './images/draw6.jpeg';
 import './App.css';
-
+import HeartRain from './components/HeartRain';
 
 
 function HomePage() {
