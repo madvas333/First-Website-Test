@@ -7,6 +7,8 @@ import image5 from './images/draw5.jpeg';
 import image6 from './images/draw6.jpeg';
 import './App.css';
 
+
+
 function HomePage() {
   return (
     <div className="HomePage">
